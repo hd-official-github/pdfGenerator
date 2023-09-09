@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'frontend',
       script: 'npm',
-      args: 'run preview',
+      args: 'run dev',
     },
     // Add more app configurations as needed
   ],
