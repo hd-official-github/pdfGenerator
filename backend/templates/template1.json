@@ -1,0 +1,14 @@
+{
+    "layout": 1,
+    "companyName": "25 South Residence",
+    "siteLocation": "Mumbai",
+    "about": "Beyond Alliance, are Mumbai based Premier System integrators for Home & Office Automation Solution, HomeCinemas & AV Solutions, Networking & Electronic Security. \nWe have almost 12 years of rich and technical expertise & experience in the industry with over 2000+ projects executed.",
+    "technologiesConsidered": [
+        "Crestron Residential Automation",
+        "Customized DB",
+        "Curtain Motors"
+    ],
+    "automationSystem": {
+        "zones": "Entire Residence except Office, Guest, Kitchen & Baths"
+    }
+}
