@@ -10,7 +10,8 @@ const session = require('express-session');
 var cors = require('cors')
 var app = express();
 const corsOptions = {
-    origin: "https://pdfgenz.netlify.app",
+    // origin: "https://pdfgenz.netlify.app",
+    origin: "http://localhost:5173",
     credentials: true, // Allow credentials, such as cookies
 };
 

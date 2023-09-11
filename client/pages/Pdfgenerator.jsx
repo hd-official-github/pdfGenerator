@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Sidebar from '../component/Sidebar';
 import Header from '../component/Header';
+import { API_IP } from '../constants';
 export default function Pdfgenerator() {
     const [iframeKey, setIframeKey] = useState(0);
-    const pdfUrl = 'http://localhost:5000/pdf';
+    const pdfUrl = `${API_IP}/pdf`;
     let { clientId } = useParams();
     const handleRefresh = (obj) => {
         console.log('called');
-        fetch('http://localhost:5000/data', {
+        fetch(`${API_IP}/data`, {
             method: 'POST',
-            credentials:'include',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -22,8 +23,8 @@ export default function Pdfgenerator() {
             console.error('There was a problem with the fetch operation:', error);
         });
     };
-    useEffect(()=>{
-        console.log('page refreshed');   
+    useEffect(() => {
+        console.log('page refreshed');
     })
     return (
         <>
